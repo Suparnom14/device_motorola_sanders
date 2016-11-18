@@ -330,7 +330,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.lte_vrte_ltd=1 \
     persist.vendor.radio.cs_srv_type=1 \
     persist.dbg.ims_volte_enable=1 \
-    persist.data.qmi.adb_logmask=0 \
     telephony.lteOnCdmaDevice=1
 
 # RmNet Data

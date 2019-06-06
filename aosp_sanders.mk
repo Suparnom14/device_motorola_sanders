@@ -39,10 +39,9 @@ PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_MODEL := Moto G5s Plus
 
-PRODUCT_SYSTEM_PROPERTY := ro.product.model
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="Moto G5S Plus" \
+    PRODUCT_NAME="Moto G5s Plus" \
+    PRODUCT_MODEL="Moto G5s Plus" \
     PRIVATE_BUILD_DESC="sanders-user 8.1.0 OPS28.65-36 9fea release-keys"
 
 # FINGERPRINT

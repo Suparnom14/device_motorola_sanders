@@ -369,11 +369,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #IDKY
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.product.model=sanders
-
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.havoc.maintainer=RONAX
+    ro.product.model=Moto G5s Plus
 
 # Spectrum
 PRODUCT_PROPERTY_OVERRIDES += \

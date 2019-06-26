@@ -16,28 +16,39 @@
 
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/motorola/sanders/full_sanders.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
-# Inherit some common SacredOS stuff.
-$(call inherit-product, vendor/sacred/common.mk)
+# Inherit from potter device
+$(call inherit-product, device/motorola/sanders/device.mk)
+
+# Inherit some common Evolution-X stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_GAPPS_ARCH := arm64
+CUSTOM_BUILD_TYPE := OFFICIAL
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES_EVO := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sanders
-PRODUCT_NAME := sacred_sanders
+PRODUCT_NAME := aosp_sanders
+PRODUCT_MODEL := Moto G (5S) Plus
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
-
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
+PRODUCT_RELEASE_NAME := sanders
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="Moto G5S Plus" \
+    PRODUCT_NAME="sanders" \
     PRIVATE_BUILD_DESC="sanders-user 8.1.0 OPS28.65-36 9fea release-keys"
 
 # FINGERPRINT
 BUILD_FINGERPRINT := google/crosshatch/crosshatch:9/PQ1A.190105.004/5148680:user/release-keys
 VENDOR_BUILD_FINGERPRINT := google/crosshatch/crosshatch:9/PQ1A.190105.004/5148680:user/release-keys
 
+# for specific
+$(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)

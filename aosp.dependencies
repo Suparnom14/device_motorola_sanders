@@ -6,7 +6,7 @@
     "revision": "pie"
   },
   {
-    "remote": "evo-decices",
+    "remote": "evo-devices",
     "repository": "kernel_motorola_sanders",
     "target_path": "kernel/motorola/msm8953",
     "revision": "pie"

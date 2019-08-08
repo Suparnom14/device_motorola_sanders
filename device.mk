@@ -359,8 +359,6 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.sensors.sh \
     init.sanders.rc \
-    init.spectrum.rc \
-    init.spectrum.sh \
     init.dtv.rc \
     init.dtv.sh
 

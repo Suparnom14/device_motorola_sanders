@@ -10,5 +10,11 @@
     "repository": "kernel_motorola_sanders",
     "target_path": "kernel/motorola/msm8953",
     "revision": "pie"
+  },
+  {
+    "remote": "github",
+    "repository": "marshmello61/android_packages_apps_SnapdragonCamera2",
+    "target_path": "packages/apps/SnapdragonCamera2",
+    "revision": "pie"
   }
 ]

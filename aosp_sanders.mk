@@ -28,14 +28,8 @@ $(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)
 # Inherit some common Evolution-X stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
-CUSTOM_BUILD_TYPE := OFFICIAL
-TARGET_BOOT_ANIMATION_RES_EVO := true
+CUSTOM_BUILD_TYPE := Community
 TARGET_PIXEL_CHARGE_ANIM := true
-
-# Memetainer stuff
-EVO_DONATE_URL := https://paypal.me/marshmello61
-EVO_MAINTAINER := Mayur-Varde
-EVO_SUPPORT_URL := https://t.me/EvolutionXSanders
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
